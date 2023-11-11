@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      .navbar {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      .logo a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+      }
+      
+      .nav-links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+      
+      .nav-links li {
+        margin-left: 20px;
+      }
+      
+      .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      .dropdown-content {
+        display: none;
+        background-color: #444;
+        position: absolute;
+        z-index: 1;
+      }
+      
+      .dropdown-content li {
+        display: block;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      JavaScript (Optional, for responsive behavior):
+      
+      js
+      Copy code
+      const toggleDropdown = () => {
+        const dropdownContent = document.querySelector('.dropdown-content');
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      };
+      
+      document.querySelector('.dropdown').addEventListener('click', toggleDropdown);
+      Note that you should save the CSS code in a file named "styles.css" in the same directory as your HTML file. The JavaScript is optional and provides the behavior to
+      
+      network error
+      
+      
+      
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My JiJi Website</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">JiJi</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li class="dropdown">
+            <a href="#">Products &#9662;</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 2</a></li>
+              <li><a href="#">Product 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+</body>
+</html>
